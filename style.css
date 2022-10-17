@@ -1,0 +1,14 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.article {
+    font-size: 25px;
+    background-color: black;
+    width: 100vw;
+}
+
+.article__h2 {
+    font-size: 0px;
+}
