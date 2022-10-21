@@ -3,4 +3,57 @@
     font-family: Arial, Helvetica, sans-serif; /* Fuente de letra */
     line-height: 1; /* Distancia de espacio en alto */
     font-weight: 100; /* Grosor de la letra */
+    text-shadow: 10px 10px 10px black; /* Eje X, Eje Y, Tamaño sombra, Color */
+    text-align: center; /* Alinea el centro en el centro dentro de la caja */
+}
+
+.box {
+    padding: 10px 20px 10px 20px; /* Distancia enrtre el texto y la caja. Orden: Top, Rigth, Bottom & Left */
+    margin: 10px 20px 10px 20px; /* Distancia entre esta caja hacia afuera. Separar cajas. Orden: Top, Rigth, Bottom & Left*/
+
+    box-sizing: border-box; /* border-box: Tamaño defindo arriba // content-box: Tamaño del contenedor */
+    height: 100px;
+    width: 100px;
+
+    background-color: grey; /* Fondo en color */
+    
+    border: auto; /* Borde que si ocupa un espacio. Puede mover cosas */
+    border-radius: 10px; /* Radio del borde */
+    border-color: grey; /* Color del borde */
+    border-style: solid; /* Estilo del borde */
+    border-width: 100px; /* Grosor del borde */
+
+    outline: auto; /* Borde que no ocupa un espacio. No mueve nada */
+    outline-color: green; /* Color del outline */
+    outline-style: solid; /* Estilo del outline */
+    outline-width: 100px; /* Grosor del outline */
+
+    box-shadow: 10px 10px 10px 0 black; /* Eje X, Eje Y, Tamaño sombra, Borde, Color */
+}
+
+.position {
+    position: relative; /* Posición de la caja. Tiene espacio Reservado */
+    top: 10px; /* La medida mas importante a tomar sobre el eje Y */
+    left: 10px; /* La medida mas importante a tomar sobre el eje X */
+
+    position: absolute; /* Posición de la caja. Sin espacio Reservado */
+    opacity: .5; /* La opacidad de la caja */
+    /* Para centrar se dejan todas las propiedades en 0 y el margin en auto*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    position: fixed; /* Posición de la caja. Fijo al scroll y Superpuesto ante todo */
+
+    position: sticky; /* Posición de la caja. Fijo al scroll al llegar a un punto */
+
+    z-index: 10; /* El orden en capas. Capa 10, 20, 30, 100, 1000 */
+}
+
+.display {
+    display: inline-block; /* Ajusta el tamaño de la box, block(Le afectan las medidas) // inline */
+    width: 400px;
+    height: 600px;
 }
