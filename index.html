@@ -12,36 +12,52 @@
         <meta name="description" content="mi primera pagina web en html">
         <meta name="author" content="MattDev">
         <meta name="copyright" content="MattDev. Inc">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
         <link rel="icon" href="Assets/Imgs/icon.png">
+
+        <script src="https://kit.fontawesome.com/fdcf84b850.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                    <li><a href="acount.html">Mi cuenta</a></li>
+            <nav class="nav">
+                <ul class="nav__ul">
+                    <li class="nav__li"><i class="fas fa-home"></i><a href="index.html">Inicio</a></li>
+                    <li class="nav__li"><i class="fas fa-user"></i><a href="contact.html">Contacto</a></li>
+                    <li class="nav__li"><i class="fas fa-circle-user"></i></i><a href="acount.html">Mi cuenta</a></li>
+                    <li class="nav__li"><i class="fas fa-right-to-bracket"></i><a href="login.html">Login</a></li>
+                </ul>
+                <ul class="nav__ul__respon">
+                    <div class="nav__button__respon__container">
+                        <div class="nav__button__respon fas fa-bars"></div>
+                    </div>
+                    <div class="nav__li__container__respon">
+                        <li class="nav__li__respon"><i class="fas fa-home"></i><a href="index.html">Inicio</a></li>
+                        <li class="nav__li__respon"><i class="fas fa-user"></i><a href="contact.html">Contacto</a></li>
+                        <li class="nav__li__respon"><i class="fas fa-circle-user"></i><a href="acount.html">Mi cuenta</a></li>
+                        <li class="nav__li__respon"><i class="fas fa-right-to-bracket"></i><a href="login.html">Login</a></li>
+                    </div>
                 </ul>
             </nav>
         </header>
 
-        <article class="article">
-            <h1 class="article__h2">Top 10 Mejores apps para android</h1>
-            <p>
+        <div class="article">
+            <h1 class="title">Top 10 Mejores apps para android</h1>
+            <p class="notice">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta impedit expedita eveniet ex adipisci nobis, quam ut, provident sequi sunt dolore ea deserunt delectus omnis quia quibusdam doloremque labore facere. <br>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo, nihil, pariatur obcaecati quasi asperiores vero cumque quo quod, quis natus amet laudantium soluta ex tempora. Unde doloribus consequuntur praesentium?
             </p>
-            <ul>
+            <ul class="list">
                 <li>Send Files to TV</li>
                 <li>Zarchiver</li>
                 <li>Ios 16 Launcher</li>
             </ul>
-        </article>
+        </div>
 
-        <footer>
+        <footer class="footer">
             <h3>copyright Reservado a aña</h3>
         </footer>
     </body>
 </html>
+

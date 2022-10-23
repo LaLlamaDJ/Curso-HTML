@@ -7,6 +7,38 @@
     text-align: center; /* Alinea el centro en el centro dentro de la caja */
 }
 
+.text::first-line {
+    color: aqua; /* Solo le afecta a la primer linea de algun texto */
+}
+
+.text::first-letter {
+    color: red; /* Solo le afeta a la primer letra de algun texto */
+}
+
+.input::placeholder {
+    color: grey; /* Cambia el color del texto al input */
+}
+
+.a:link {
+    color: red; /* Cambia a esto antes de haberlo visitado */
+}
+
+.a:visited {
+    color:aliceblue; /* Cambia a esto despues de haberlo visitado */
+}
+
+.button:hover {
+    color: black; /* Cambia a esto cuando el mouse esta sobre el objeto */
+}
+
+.box:active {
+    color:lightcoral; /* Cambia a esto mientras se este clickeando sobre este */
+}
+
+.input:focus {
+    color: orange; /* Cambia a esto mientras este seleccionado */
+}
+
 .box {
     padding: 10px 20px 10px 20px; /* Distancia enrtre el texto y la caja. Orden: Top, Rigth, Bottom & Left */
     margin: 10px 20px 10px 20px; /* Distancia entre esta caja hacia afuera. Separar cajas. Orden: Top, Rigth, Bottom & Left*/
@@ -29,6 +61,8 @@
     outline-width: 100px; /* Grosor del outline */
 
     box-shadow: 10px 10px 10px 0 black; /* Eje X, Eje Y, Tamaño sombra, Borde, Color */
+
+    float: right; /* Mueve una imagen o objeto a algun lado del contenedor */
 }
 
 .position {
@@ -53,7 +87,39 @@
 }
 
 .display {
-    display: inline-block; /* Ajusta el tamaño de la box, block(Le afectan las medidas) // inline */
+    display: block; /* Ajusta el tamaño de la box, Ocupa toda la pantalla */
+    display: inline; /* Ajusta el tamaño de la box, Se ajusta al contenido */
+
+    display: inline-block; /* Ajusta el tamaño de la box, Se ajusta a medidas */
+    
+    display: grid; /* Ajusta el tamaño de la box,  */
+    display: flex; /* Ajusta el tamaño de la box,  */
+
+    display: inline-flex; /* Ajusta el tamaño de la box,  */
+
     width: 400px;
     height: 600px;
+}
+
+.overflow {
+    overflow: auto; /* Elimina el exedente de una caja. */
+    overflow: hidden; /* Elimina el exedente de una caja. No muestra nada */
+    overflow: scroll; /* Elimina el exedente de una caja. Permite el scroll */
+    overflow: visible; /* Elimina el exedente de una caja. Hace visible el contenido */
+
+    overflow-y: auto; /* Elimina el exedente de una caja. Afecta solo al eje Y */
+    overflow-x: auto; /* Elimina el exedente de una caja. Afecta solo al eje X */
+}
+
+.img {
+    object-fit: contain; /* Se ajusta al contenedor dejando espacio vacio */
+    object-fit: cover; /* Recorta la imagen para ocupar todo el contenedor */
+    object-fit: none; /* Manda la foto asi nomas */
+    object-fit: scale-down; /* ELije el menor valor entre none & contain */
+
+    object-position: top; /* Elige que parte mostrar de la imagen en cover. Arriba */
+    object-position: right; /* Elige que parte mostrar de la imagen en cover. Derecha */
+    object-position: bottom; /* Elige que parte mostrar de la imagen en cover. Abajo */
+    object-position: left; /* Elige que parte mostrar de la imagen en cover. Izquierda */
+    object-position: 14px; /* Elige que parte mostrar de la imagen en cover. Esta vex con medidas */
 }
